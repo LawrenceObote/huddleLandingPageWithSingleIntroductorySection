@@ -5,39 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,700&display=swap" rel="stylesheet">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script src="https://use.fontawesome.com/1e4d1ad84a.js"></script>
 
-  
-  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+  <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-<section class="left">
-    <img src="images/logo.svg" id="logo">
-    <img src="images/illustration-mockups.svg" id="mockUps">
-</section>
+<div class="wrapper" id="up">
+<div class="container" id="top">
+  <img src="images/logo.svg" id="logo">
+  <button id="free">Try It Free</button>
+  <div class="row" id="topRow">
+    <div class="column left">
+  <h1 id="build">Build The Community Your Fans Will Love</h1>
+  <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion</p>
+  <button class="getStarted">Get Started For Free</button>
+</div>
+<div class="column right">
+  <img src="images/illustration-mockups.svg" class="img" id="mockUps">
+</div>
+</div>
+</div>
+</div>
+<div class="container mid">
+  <div class="row">
+    <div class="column right">
+    <img src="images/illustration-grow-together.svg" class="img">
+  </div>
+  <div class="column left">
+  <h1>Grow Together</h1>
+  <p>Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
+  </div>
+  </div>
+</div>
 
-<section class="right">
-  <h1>
-    Build The Community Your Fans Will Love
-  </h1>
-    <p>Huddle re-imagines the way we build communties. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
-    <button>Register</button>
+<div class="container mid">
+  <div class="row">
+    <div class="column left">
+    <img src="images/illustration-flowing-conversation.svg" class="img">
+  </div>
+  <div class="column right">
+    <h1>Flowing Conversations</h1>
+    <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
+  </div>
+  </div>
+</div>
 
-
-  <section>
-    <i class="fa fa-facebook-f"></i>
-    <i class="fa fa-twitter"></i>
-    <i class="fa fa-instagram"></i>
-  </section>
-</section>
- 
+<div class="container mid">
+  <div class="row">
+  <div class="column right">
+    <img src="images/illustration-your-users.svg" class="img">
+  </div>
+  <div class="column left">
+    <h1>Your Users</h1>
+    <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
+  </div>
+  </div>
+</div>
+  <div class="wrapper bottom" id="one">
+  <div class="container bottom" id="jumbo">
+    <div class="jumbotron">
+      <h1>Ready To Build Your Community?</h1>
+      <button class="getStarted">Get Started For Free</button>
+    </div>
+    <div class="row bottom" id="two">
+      <h1><img src="images/logo-footer.svg"></h1>
+      <ul>
+     <li class="first">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+      <li class="second">+1-543-123-4567</li>
+      </ul>
+    </div>
+  </div>
+    <ul class="bottom" id="three">
+      <li>About Us</li>
+      <li>What We Do</li>
+      <li>FAQ</li>
+      <li>Career</li>
+      <li>Blog</li>
+      <li>Contact Us</li>
+    </ul>
+    <div class="icons">
+      <i class="fab fa fa-facebook-f"></i>
+      <i class="fab fa fa-twitter"></i>
+      <i class="fab fa fa-instagram"></i>
+    </div>
+  </div>
 </body>
 </html>
