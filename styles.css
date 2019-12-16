@@ -1,117 +1,138 @@
+.page-container{
+	min-height: 100vh;
+}
 body{
-	padding: 25px 38px 0;
-	color: white;
-	background-color: hsl(257, 40%, 49%);
-	padding: 0px 0px 0;
-}
-#left{
-	background-color: #674BB1;
+	background-color: hsl(257, 40%,49%);
 	background-image: url("images/bg-mobile.svg");
-	background-position: top;
+	color: white;
+	background-size: 100%;
 	background-repeat: no-repeat;
-	background-size: cover;
-	margin-bottom: 80px;
+	min-width: 375px;
+	height: calc(100% - 8px);
+    margin: 8px 8px 0px 8px;
 }
-#logo{
-	float: left;
-	margin-left: 10%;
-	width: 30%;
-	margin-top: 5%;
-	margin-bottom: 20%;
+.logo{
+	margin-bottom: 50px;
+	width: 40%;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+.first{
+	margin-bottom: 100px;
+	background-size: cover;
+}
+.second{
+	text-align: center;
+
 }
 #mockUps{
-	display: flex;
-	width: 80%;
+	max-width: 100%;
+	display: block;
 	margin: 0 auto;
-}
-.right{
-	text-align: center;
-	padding: 0px 30px;
-}
-p{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 18.5px;
-
 }
 h1{
-	padding: 0px 30px;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 400;
+	margin-bottom: 25px;
+	padding-right: 20px;
+}
+p{	
+	font-size: 20px;
+	padding: 0px 20px 15px 10px;
 }
 button{
+	width: 250px;
+	height: 45px;
+	color: hsl(257, 40%,49%);
 	background-color: white;
-	color: hsl(257, 40%, 49%);
-	margin: 0 auto;
-	border-radius: 25px;
+	border-radius: 28px;
+	margin-bottom: 50px;
+}
+footer{
+	justify-content: center;
 	text-align: center;
-	padding: 12px 84px;
-	border: none;
-	box-shadow: 0 4px 8px 0, 0 6px 10px rgba(0,0,0,0.4);
-	margin-bottom: 20%;
-	margin-top: 10%;
+	margin: 0 auto;
+	width: 50%;
+	position: absolute;
+	bottom: 0;
 }
 section{
-	text-align:center;
+	display: block;
+	text-align: center;
 }
-
+.two{
+	padding-bottom: 100px;
+}
 span{
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	border-radius: 25px;
+	border: solid 1px white;
+	font-size: 2em;
+	text-align: center;
+	margin: 0px 10px;
 
-    -moz-border-radius: 20px; /* or 50% */
-    border-radius: 20px; /* or 50% */
 
-    color: white;
-    text-align: center;
-    font-size: 1.5em;
-    border: solid 2px white;
-    margin-left: 10px;
-    margin-bottom: 30px;
- 
 
 }
 
-@media (min-width: 576px){
-		#logo{
-			width: 25%;
-		}
+@media only screen and (min-width: 992px) {
+body{
+	background-color: hsl(257, 40%,49%);
+	background-image: url("images/bg-desktop.svg");
+	color: white;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	min-width: 375px;
+	height: 100vh;
+	max-height: 100%;
+	max-width: 100%;
+	overflow: hidden;
 }
-
-@media (min-width: 768px){
-		#logo{
-			width: 20%;
-		}
+.logo{
+	margin-bottom: 30px;
+	width: 20%;
+	margin-top: 20px;
+	margin-left: 20px;
 }
+#mockUps{
+	display: inline-block;
+	max-width: 100%;
+	margin-left: 40px;
 
-@media (min-width: 992px){
-		#logo{
-			width: 20%;
-		}
-		.left{
-			float: left;
-			display: inline-block;
-			order: 1;
-			width: 50%;
-		}
-		.right{
-			float: right;
-			display: inline-block;
-			order: 2;
-			width: 50%;
-		}
-		section{
-			text-align: center;
-		}
 }
-
-@media (min-width: 1200px){
-		#logo{
-			width: 20%;
-		}
+.first{
+	width: 50%;
 }
-
-
-/*font-family: 'Poppins', sans-serif;
-font-family: 'Open Sans', sans-serif;*/
+h1{
+	margin-left: 10px;
+	vertical-align: middle;
+	padding-right: 200px;
+	margin-left: 30px;
+}
+p{
+	margin-left: 30px;
+	vertical-align: middle;
+	padding-right: 100px;
+}
+button{
+	margin-left: 30px;
+}
+.left{
+	width: 40%;
+	margin-left: 10px;
+}
+.second{
+	width: 38%;
+	text-align: left;
+	margin: 0 auto;
+	padding-top: 100px;
+	padding-left: 30px;
+}
+section{
+	display: normal;
+}
+span{
+	float: right;
+}
+}
